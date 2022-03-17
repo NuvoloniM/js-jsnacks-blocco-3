@@ -11,10 +11,17 @@ let q = prompt('Quale è il tuo nome?');
 
 let i = 0;
 
-do {
+let found = false;
+
+while (q == invitati[i] || i < invitati.length) {
     if (q == invitati[i]) {
-        alert('Sei nella lista')
-    } else {
-        i++   
+        found = true;
     }
-} while (q == invitati[i]);
+    i++;
+}
+
+if (found == true) {
+    alert ('Perfetto, sei nella lista. Entra pure')
+} else {
+    alert('Mi dispiace, non sei fra gli invitati')
+}

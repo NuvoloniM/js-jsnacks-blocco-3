@@ -8,9 +8,16 @@ let sum = 0;
 
 while (sum < 50) {
     let x = parseInt(prompt('Inserisci un numero'))
-    list.push(x);
-    sum += x;
-    console.log(sum);
+    if (isNaN(x)) {
+        alert('hai inserito un dato non valido')
+    } else {
+        sum += x;
+    } if (sum < 50) {
+        list.push(x);
+    } else {
+        alert('Hai sforato!')
+    }
+    
 }
 
 console.log(list);

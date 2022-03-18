@@ -12,7 +12,7 @@ let stamp = document.getElementById('list')
 while (i < N) {
     const list = [];
     for (let y = 0; y < 10; y++) {
-       let x = Math.round(Math.random()* 100); 
+        let x = Math.ceil(Math.random()* 100); 
         list.push(x);
     }
     console.log(list);

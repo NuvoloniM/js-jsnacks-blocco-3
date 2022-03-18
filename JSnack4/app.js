@@ -13,9 +13,10 @@ let i = 0;
 
 let found = false;
 
-while (q == invitati[i] || i < invitati.length) {
+while ( i < invitati.length) {
     if (q == invitati[i]) {
         found = true;
+        i = invitati.length
     }
     i++;
 }
